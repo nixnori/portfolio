@@ -1,0 +1,15 @@
+@import '../../partials/mixins', '../../partials/variables';
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $primary;
+    padding: 1.5rem 0 1rem;
+
+    &__links {
+        text-decoration: none;
+        color: rgb(216, 97, 153);
+        
+
+    }
+}
