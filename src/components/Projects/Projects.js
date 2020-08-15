@@ -40,7 +40,7 @@ const Projects = () => {
             return (
               <div className="projects__item">
                 <div>
-                  <ScrollAnimation animateIn="flipInX" delay={300}>
+                  <ScrollAnimation animateIn="flipInX" delay={300} animateOnce={true}>
                     <img
                       className="projects__image"
                       src={proj.image}

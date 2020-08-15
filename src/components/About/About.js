@@ -29,7 +29,7 @@ const About = () => {
   return (
     <section id="about">
       <div className="about__container about">
-        <ScrollAnimation animateIn="bounceInDown">
+        <ScrollAnimation animateIn="bounceInDown" animateOnce={true}>
           <h1 className="about__header">about</h1>
           <div className="about__text">
             <h4>
@@ -58,7 +58,7 @@ const About = () => {
         </ScrollAnimation>
       </div>
       <div className="about__container">
-        <ScrollAnimation animateIn="bounceInRight" delay={300}>
+        <ScrollAnimation animateIn="bounceInRight" delay={300} animateOnce={true}>
           <h1 className="about__header header2">tools</h1>
           <div className="about__stack">
             <div className="about__tools">
