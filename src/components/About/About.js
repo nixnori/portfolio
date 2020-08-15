@@ -58,7 +58,7 @@ const About = () => {
         </ScrollAnimation>
       </div>
       <div className="about__container">
-        <ScrollAnimation animateIn="bounceInRight" delay={900}>
+        <ScrollAnimation animateIn="bounceInRight" delay={300}>
           <h1 className="about__header header2">tools</h1>
           <div className="about__stack">
             <div className="about__tools">
