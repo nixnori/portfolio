@@ -124,7 +124,8 @@
   }
 
   &__contact {
-    filter: none;
+    filter: invert(9%) sepia(4%) saturate(5593%) hue-rotate(182deg)
+      brightness(94%) contrast(81%);
     margin-bottom: 3rem;
   }
 }

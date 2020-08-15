@@ -6,23 +6,24 @@ import js from "../../assets/images/javascript.svg";
 import sass from "../../assets/images/sass.svg";
 import reactJs from "../../assets/images/react.svg";
 import node from "../../assets/images/node.svg";
-import express from "../../assets/images/express.svg";
+import express from "../../assets/images/express.png";
 import git from "../../assets/images/git.svg";
-import Contact from "../Contact/Contact";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const About = () => {
   const [tools1] = useState([
-    { image: html, text: "html" },
-    { image: css, text: "css" },
-    { image: js, text: "js" },
-    { image: sass, text: "sass" },
+    { image: html, text: "HTML" },
+    { image: css, text: "CSS" },
+    { image: js, text: "JavaScript" },
   ]);
   const [tools2] = useState([
-    { image: reactJs, text: "reactJs" },
-    { image: node, text: "node" },
-    { image: express, text: "express" },
-    { image: git, text: "git" },
+    { image: sass, text: "SASS" },
+    { image: reactJs, text: "React/Native" },
+    { image: express, text: "Express.js" },
+  ]);
+  const [tools3] = useState([
+    { image: node, text: "Node.js" },
+    { image: git, text: "Git" },
   ]);
 
   return (
@@ -47,7 +48,7 @@ const About = () => {
             </p>
             <p className="about__last-par">
               If you'd like to learn more about me or my work, feel free to{" "}
-              shoot me a message via <span>LinkedIn</span> or send me an <span>email.</span>
+              shoot me a message via <a className="about__links" href="http://www.linkedin.com/in/nikki-noriega">LinkedIn</a> or send me an <a className="about__links" href="mailto:nikkinoriega@outlook.com">email.</a>
             </p>
             <h4>
               Stay safe and don't forget to wash your hands!{" "}
@@ -63,29 +64,45 @@ const About = () => {
             <div className="about__tools">
               {tools1.map((tool) => {
                 return (
-                  <img
-                    src={tool.image}
-                    className="about__icon"
-                    alt={tool.text}
-                  ></img>
+                  <div className="about__item">
+                    <img
+                      src={tool.image}
+                      className="about__icon"
+                      alt={tool.text}
+                    ></img>
+                    <h4>{tool.text}</h4>
+                  </div>
                 );
               })}
             </div>
             <div className="about__tools">
               {tools2.map((tool) => {
                 return (
-                  <img
-                    src={tool.image}
-                    className="about__icon"
-                    alt={tool.text}
-                  ></img>
+                  <div className="about__item">
+                    <img
+                      src={tool.image}
+                      className="about__icon"
+                      alt={tool.text}
+                    ></img>
+                    <h4>{tool.text}</h4>
+                  </div>
                 );
               })}
             </div>
-          </div>
-          <div className="about__contact">
-            <h1 className="about__contact--header">contact me:</h1>
-            <Contact className="about__contact-links" />
+            <div className="about__tools">
+              {tools3.map((tool) => {
+                return (
+                  <div className="about__item">
+                    <img
+                      src={tool.image}
+                      className="about__icon"
+                      alt={tool.text}
+                    ></img>
+                    <h4>{tool.text}</h4>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </ScrollAnimation>
       </div>
