@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Nav.scss";
 
 const Nav = () => {
-  const [links, setLinks] = useState(["about", "projects"]);
+  const [links] = useState(["about", "projects"]);
 
   return (
     <nav className="nav">

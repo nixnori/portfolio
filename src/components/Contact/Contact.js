@@ -5,7 +5,7 @@ import github from "../../assets/images/github.svg";
 import mail from "../../assets/images/mail.svg";
 
 const Contact = (props) => {
-  const [contactLinks, setContactLinks] = useState([
+  const [contactLinks] = useState([
     {
       link: "http://www.linkedin.com/in/nikki-noriega",
       icon: linkedin,

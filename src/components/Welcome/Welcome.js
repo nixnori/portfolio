@@ -4,7 +4,7 @@ import Typing from "react-typing-animation";
 import Contact from "../Contact/Contact";
 
 const Welcome = () => {
-  const [msg, setMsg] = useState([
+  const [msg] = useState([
     "Hello, there!",
     "How's it going?",
     "Welcome!",

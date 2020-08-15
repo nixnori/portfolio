@@ -12,8 +12,18 @@ import Contact from "../Contact/Contact";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const About = () => {
-  const [tools1, setTools1] = useState([html, css, js, sass]);
-  const [tools2, setTools2] = useState([reactJs, node, express, git]);
+  const [tools1] = useState([
+    { image: html, text: "html" },
+    { image: css, text: "css" },
+    { image: js, text: "js" },
+    { image: sass, text: "sass" },
+  ]);
+  const [tools2] = useState([
+    { image: reactJs, text: "reactJs" },
+    { image: node, text: "node" },
+    { image: express, text: "express" },
+    { image: git, text: "git" },
+  ]);
 
   return (
     <section id="about">
@@ -52,12 +62,24 @@ const About = () => {
           <div className="about__stack">
             <div className="about__tools">
               {tools1.map((tool) => {
-                return <img src={tool} className="about__icon"></img>;
+                return (
+                  <img
+                    src={tool.image}
+                    className="about__icon"
+                    alt={tool.text}
+                  ></img>
+                );
               })}
             </div>
             <div className="about__tools">
               {tools2.map((tool) => {
-                return <img src={tool} className="about__icon"></img>;
+                return (
+                  <img
+                    src={tool.image}
+                    className="about__icon"
+                    alt={tool.text}
+                  ></img>
+                );
               })}
             </div>
           </div>

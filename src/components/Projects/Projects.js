@@ -7,7 +7,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import Contact from "../Contact/Contact";
 
 const Projects = () => {
-  const [projects, setProjects] = useState([
+  const [projects] = useState([
     {
       image: munch,
       title: "Munch",
