@@ -47,7 +47,7 @@ const About = () => {
             </p>
             <p className="about__last-par">
               If you'd like to learn more about me or my work, feel free to{" "}
-              <span>shoot me a message</span> via LinkedIn or send me an email.
+              shoot me a message via <span>LinkedIn</span> or send me an <span>email.</span>
             </p>
             <h4>
               Stay safe and don't forget to wash your hands!{" "}
