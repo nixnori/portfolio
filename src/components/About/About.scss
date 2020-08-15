@@ -1,0 +1,159 @@
+@import '../../partials/mixins', '../../partials/variables';
+
+#about {
+    display: flex;
+    background-color: $white;
+    flex-direction: column;
+
+    @include desktop {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.about {
+    background-color: $highlight;
+    background-image: url("https://www.transparenttextures.com/patterns/crossword.png");        
+
+    &__container {
+        padding: 3rem 2rem;
+        width: 100%;
+
+        @include desktop {
+            padding: 5rem;
+            margin: 4.5rem 0 1rem;
+            width: 50%;                                                                                                                                       
+        }
+    }
+
+    &__header {
+        color: $white;
+        font-weight: 600;
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+        letter-spacing: 0.75rem;
+        border-bottom: solid 1px $white;
+        margin-bottom: 2rem;
+        text-align: center;
+
+        @include tablet {
+            font-size: 2rem;
+        }
+
+        @include desktop {
+            font-size: 3rem;
+        }
+    }
+
+    &__text {
+        letter-spacing: 0.1rem;
+        font-weight: 300;
+        font-size: 1rem;
+        text-align: center;
+
+        & h4 {
+            color: $white;
+            font-size: 0.8125rem;
+            line-height: 1.25rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+
+            @include tablet {
+                font-size: 1rem;
+            }
+        }
+
+        & p {
+            color: $white;
+            font-size: 0.8125rem;
+            line-height: 1.5rem;
+
+            @include tablet {
+                line-height: 2rem;
+            }
+
+            @include desktop-deeper {
+                font-size: 1rem;
+            }
+        }
+
+        & span {
+            font-weight: 600;
+            color: $white;
+        }
+
+        @include desktop {
+            line-height: 2rem;
+        }
+    }
+
+    &__last-par {
+        margin-bottom: 2rem;
+    }
+
+    &__emoji {
+        font-size: 1.5rem;
+    }
+
+    &__icon {
+        width: 5rem;
+        margin: 0.5rem 1rem 1rem;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        @include desktop {
+            width: 3.5rem;
+            margin: 0.5rem 1rem 1rem;
+        }
+
+        @include desktop-deeper {
+            width: 5rem;
+        }
+    }
+
+    &__tools {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__stack {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+
+        &--header {
+            letter-spacing: 0.2rem;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+
+            @include tablet {
+                font-size: 1.5rem;
+            }
+        }
+
+        &-links {
+            filter: none;
+        }
+    }
+}
+
+
+.header2 {
+    color: $secondary;
+    border-color: $secondary;
+}
+
+.stack {
+    display: flex;
+    justify-content: center;
+}

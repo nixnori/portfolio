@@ -1,0 +1,130 @@
+@import "../../partials/mixins", "../../partials/variables";
+
+#projects {
+  display: flex;
+  justify-content: center;
+}
+
+.projects {
+  &__container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__header {
+    letter-spacing: 0.75rem;
+    font-size: 2rem;
+
+    @include desktop {
+      font-size: 3.5rem;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+
+  &__box {
+    padding: 1.5rem;
+
+    @include tablet {
+      padding: 1rem 2rem;
+    }
+
+    @include desktop {
+      width: 75%;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+
+    @include tablet {
+      flex-direction: row;
+      margin: 2.5rem 0;
+    }
+
+    @include desktop-deeper {
+      margin: 3rem 0;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 0px 20px 0px 20px;
+    box-shadow: 0 1px 1px 10px $secondary;
+
+    @include tablet {
+      width: 300px;
+      margin-right: 0.5rem;
+    }
+
+    @include desktop {
+      margin-right: 1rem;
+      width: 350px;
+    }
+
+    @include desktop-deeper {
+      margin-right: 1.5rem;
+      width: 500px;
+    }
+  }
+
+  &__title {
+    letter-spacing: 0.2rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-shadow: 3.5px 2px 2px $primary;
+
+    @include tablet {
+      font-size: 2rem;
+      margin: 0 0 1rem;
+    }
+  }
+
+  &__descr {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.1rem;
+    font-size: 0.8125rem;
+
+    @include tablet {
+      font-size: 1rem;
+    }
+  }
+
+  &__ts-header {
+    letter-spacing: 0.15rem;
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+    color: $highlight;
+    font-size: 1rem;
+
+    @include tablet {
+      font-size: 1.17rem;
+    }
+  }
+
+  &__stack {
+    letter-spacing: 0.1rem;
+    line-height: 1.75rem;
+    font-size: 0.8125rem;
+
+    @include tablet {
+      font-size: 1rem;
+    }
+  }
+
+  &__contact {
+    filter: none;
+    margin-bottom: 3rem;
+  }
+}

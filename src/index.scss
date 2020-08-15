@@ -1,8 +1,16 @@
-@import './partials/fonts';
+@import "./partials/fonts", "./partials/variables";
 
-body, * {
+body,
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Sora";
+  font-family: "Aileron";
+  color: $secondary;
+  transition: ease-in-out 0.2s;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: $white;
 }

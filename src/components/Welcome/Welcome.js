@@ -1,28 +1,30 @@
 import React, { useState } from "react";
 import "./Welcome.scss";
 import Typing from "react-typing-animation";
+import Contact from "../Contact/Contact";
 
 const Welcome = () => {
   const [msg, setMsg] = useState([
-    "Hi, I'm Nikki.",
-    "I'm a web developer.",
-    "Welcome to my page!",
+    "Hello, there!",
+    "How's it going?",
+    "Welcome!",
   ]);
 
   return (
-    <div className="welcome">
+    <section id="home">
       <div className="welcome__laptop">
         <Typing loop={true} speed={60}>
           <span className="welcome__msg">{msg[0]}</span>
-          <Typing.Backspace count={msg[0].length} delay={2000} />
+          <Typing.Backspace count={msg[0].length} delay={2500} />
           <span className="welcome__msg">{msg[1]}</span>
-          <Typing.Backspace count={msg[1].length} delay={2000} />
+          <Typing.Backspace count={msg[1].length} delay={2500} />
           <span className="welcome__msg">{msg[2]}</span>
-          <Typing.Backspace count={msg[2].length} delay={3000} />
-          <Typing.Reset delay={3000} />
+          <Typing.Backspace count={msg[2].length} delay={2500} />
+          <Typing.Reset delay={2500} />
         </Typing>
       </div>
-    </div>
+      <Contact />
+    </section>
   );
 };
 

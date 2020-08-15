@@ -1,57 +1,56 @@
-@import '../../partials/mixins', '../../partials/variables';
+@import "../../partials/mixins", "../../partials/variables";
+
+#home {
+  background-color: $primary;
+  background-image: url("https://www.transparenttextures.com/patterns/crossword.png");
+  display: flex;
+  padding-top: 4rem;
+  align-items: center;
+  flex-direction: column;
+
+  @include desktop {
+    padding-top: 5rem;
+    height: 768px;
+  }
+}
 
 .welcome {
-    background-color: $primary;
-    height: 100vh;
+  &__laptop {
+    background-image: url("../../assets/images/laptop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    height: 12rem;
+    width: 100%;
+    margin: 1rem;
     display: flex;
-    padding-top: 5rem;
-    align-items: center;
-    flex-direction: column;
-    
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 3.5rem;
+
     @include tablet {
-        padding-top: 5rem;
+      height: 18rem;
+      padding-top: 5.75rem;
     }
 
     @include desktop {
-        padding-top: 7rem;
+      height: 27rem;
+      padding-top: 8rem;
+      margin: 4rem 1rem 1rem;
+    }
+  }
+
+  &__msg {
+    text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.1rem;
+    font-size: 0.8125rem;
+
+    @include tablet {
+      font-size: 1rem;
     }
 
-    &__laptop {
-        background-image: url('../../assets/images/laptop.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: auto;
-        height: 12rem;
-        width: 100%;
-        margin: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        padding-top: 3.75rem;
-        
-        @include tablet {
-            height: 18em;
-            padding-top: 5rem;
-        }
-
-        @include desktop {
-            height: 27em;
-            padding-top: 8rem;
-        }
+    @include desktop {
+      font-size: 2rem;
     }
-
-    &__msg {
-        text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.5);
-        letter-spacing: 0.075rem;
-        font-size: 0.8125rem;
-        font-weight: 100;
-
-        @include tablet {
-            font-size: 1rem;
-        }
-        
-        @include desktop {
-            font-size: 2rem;
-        }
-    }
+  }
 }

@@ -1,15 +1,27 @@
-@import '../../partials/mixins', '../../partials/variables';
+@import "../../partials/mixins", "../../partials/variables";
 
 .nav {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: $primary;
-    padding: 1.5rem 0 1rem;
+  display: flex;
+  justify-content: center;
 
-    &__links {
-        text-decoration: none;
-        color: rgb(216, 97, 153);
-        
+  &__links {
+    text-decoration: none;
+    color: $secondary;
+    font-weight: 100;
+    letter-spacing: 0.075rem;
+    width: 7rem;
+    padding: 0.3rem;
+    border: solid 1px $secondary;
+    text-align: center;
+    margin: 0 0.5rem;
 
+    @include desktop {
+      padding: 0.5rem;
+      &:hover {
+        background-color: rgb(216, 97, 153);
+        background-color: $secondary;
+        color: $white;
+      }
     }
+  }
 }

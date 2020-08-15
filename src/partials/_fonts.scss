@@ -1,18 +1,23 @@
 @font-face {
-    font-family: "Sora";
-    font-weight: 100;
-    src: url("../assets/fonts/Sora-Light.ttf")
+  font-family: "Aileron";
+  font-weight: 100;
+  src: url("../assets/fonts/aileron_thin.otf");
 }
 
 @font-face {
-    font-family: "Sora";
-    font-weight: 400;
-    src: url("../assets/fonts/Sora-Regular.ttf")
+  font-family: "Aileron";
+  font-weight: 400;
+  src: url("../assets/fonts/aileron_regular.otf");
 }
 
+@font-face {
+  font-family: "Aileron";
+  font-weight: 600;
+  src: url("../assets/fonts/aileron_semibold.otf");
+}
 
 @font-face {
-    font-family: "Sora";
-    font-weight: 900;
-    src: url("../assets/fonts/Sora-Bold.ttf")
+  font-family: "Aileron";
+  font-weight: 900;
+  src: url("../assets/fonts/aileron_bold.otf");
 }
