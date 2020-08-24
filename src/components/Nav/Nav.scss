@@ -6,7 +6,8 @@
 
   &__links {
     text-decoration: none;
-    color: $secondary;
+    background-color: $secondary;
+    color: $white;
     font-weight: 100;
     letter-spacing: 0.075rem;
     width: 7rem;
@@ -18,8 +19,8 @@
     @include desktop {
       padding: 0.5rem;
       &:hover {
-        background-color: rgb(216, 97, 153);
-        background-color: $secondary;
+        background-color: $highlight;
+        border: solid 1px $highlight;
         color: $white;
       }
     }
