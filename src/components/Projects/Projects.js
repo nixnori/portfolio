@@ -14,6 +14,7 @@ const Projects = () => {
       descr:
         "Capstone project designed and developed over the course of 2 weeks. Munch is the perfect app to help you randomly select a restaurant that meets your preferences.",
       techStack: "React Native, Google Maps API, Yelp Fusion API",
+      demo: "https://www.loom.com/share/3d21d153f6d04577adc1e5036a4c1d6f"
     },
     {
       image: instock,
@@ -21,6 +22,8 @@ const Projects = () => {
       descr:
         "Collaborative single-sprint project. InStock is a web app that tracks warehouse inventory.",
       techStack: "React, SASS, Node.js, JIRA",
+      demo: "https://www.loom.com/share/f7ff15d9a8d943859e147ad346e0a8ec"
+      
     },
     {
       image: brainflix,
@@ -28,6 +31,7 @@ const Projects = () => {
       descr:
         "Single page application (SPA) completed over 3 weeks; operates similar to YouTube. ",
       techStack: "React, SASS, Node.js, Express",
+      demo: "https://www.loom.com/share/8685f4fb311740698c5ef20239ccc302"
     },
   ]);
 
@@ -49,10 +53,14 @@ const Projects = () => {
                   </ScrollAnimation>
                 </div>
                 <div className="projects__descr">
-                  <h2 className="projects__title">{proj.title}</h2>
+                  <div className="projects__top">
+                    <h2 className="projects__title">{proj.title}</h2>
+                    {/* <a href={proj.demo} className="projects__demo">DEMO</a> */}
+                  </div>
                   <p className="projects__text">{proj.descr}</p>
                   <h3 className="projects__ts-header">tech stack / tools</h3>
                   <p className="projects__stack">{proj.techStack}</p>
+                  <a href={proj.demo} className="projects__demo">DEMO</a>
                 </div>
               </div>
             );

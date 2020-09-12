@@ -72,22 +72,40 @@
     }
   }
 
+  &__top {
+    display: flex;
+    align-items: baseline;
+
+  }
+
   &__title {
     letter-spacing: 0.2rem;
     font-weight: 900;
     font-size: 1.5rem;
-    margin: 1rem 0;
+    margin: 1rem 1rem 1rem 0;
     text-shadow: 3.5px 2px 2px $primary;
 
     @include tablet {
       font-size: 2rem;
-      margin: 0 0 1rem;
+      margin: 0 0.5rem 1rem 0;
     }
   }
 
   &__descr {
     width: 100%;
     padding: 1rem 2rem;
+  }
+
+  &__demo {
+    background-color: $primary;
+    text-decoration: none;
+    padding: 0.25rem 1rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+
+    &:hover {
+      background-color: $highlight;
+    }
   }
 
   &__text {
@@ -106,6 +124,7 @@
   &__stack {
     letter-spacing: 0.1rem;
     line-height: 1.75rem;
+    margin-bottom: 1rem;
   }
 
   &__contact {
