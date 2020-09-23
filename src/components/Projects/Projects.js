@@ -3,11 +3,20 @@ import "./Projects.scss";
 import munch from "../../assets/images/Munch.png";
 import instock from "../../assets/images/InStock.png";
 import brainflix from "../../assets/images/Brainflix.png";
+import saucyplate from "../../assets/images/saucyplate.png"
 import ScrollAnimation from "react-animate-on-scroll";
 import Contact from "../Contact/Contact";
 
 const Projects = () => {
   const [projects] = useState([
+    {
+      image: saucyplate,
+      title: "Saucy Plate",
+      descr:
+        "Redesigned multi-page restaurant website into a single-page website with a cleaner aesthetic.",
+      techStack: "Wix, Figma",
+      demo: "https://www.saucyplate.ca"
+    },
     {
       image: munch,
       title: "Munch",
@@ -55,12 +64,11 @@ const Projects = () => {
                 <div className="projects__descr">
                   <div className="projects__top">
                     <h2 className="projects__title">{proj.title}</h2>
-                    {/* <a href={proj.demo} className="projects__demo">DEMO</a> */}
                   </div>
                   <p className="projects__text">{proj.descr}</p>
                   <h3 className="projects__ts-header">tech stack / tools</h3>
                   <p className="projects__stack">{proj.techStack}</p>
-                  <a href={proj.demo} className="projects__demo">DEMO</a>
+                  <a href={proj.demo} className="projects__demo" target="blank">DEMO</a>
                 </div>
               </div>
             );
