@@ -4,11 +4,20 @@ import munch from "../../assets/images/Munch.png";
 import instock from "../../assets/images/InStock.png";
 import brainflix from "../../assets/images/Brainflix.png";
 import saucyplate from "../../assets/images/saucyplate.png"
+import todolist from "../../assets/images/to-do-list.png"
 import ScrollAnimation from "react-animate-on-scroll";
 import Contact from "../Contact/Contact";
 
 const Projects = () => {
   const [projects] = useState([
+    {
+      image: todolist,
+      title: "To Do List",
+      descr:
+        "Simple to-do list created with EJS and Node.",
+      techStack: "EJS, Node, Heroku, MongoDB/Mongoose",
+      demo: "https://nixnori-todolist.herokuapp.com/"
+    },
     {
       image: saucyplate,
       title: "Saucy Plate",
