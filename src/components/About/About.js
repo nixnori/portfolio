@@ -8,6 +8,7 @@ import reactJs from "../../assets/images/react.svg";
 import node from "../../assets/images/node.svg";
 import express from "../../assets/images/express.png";
 import git from "../../assets/images/git.svg";
+import mongo from "../../assets/images/mongodb-icon.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const About = () => {
@@ -19,10 +20,11 @@ const About = () => {
   const [tools2] = useState([
     { image: sass, text: "SASS" },
     { image: reactJs, text: "React/Native" },
-    { image: express, text: "Express.js" },
+    { image: express, text: "ExpressJS" },
   ]);
   const [tools3] = useState([
-    { image: node, text: "Node.js" },
+    { image: node, text: "NodeJS" },
+    { image: mongo, text: "MongoDB" },
     { image: git, text: "Git" },
   ]);
 
