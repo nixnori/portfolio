@@ -45,8 +45,7 @@ const About = () => {
             <p>
               I enjoy collaborating with people in creating solutions that focus
               on <span>user experience</span> and making the web a beautiful
-              place. Currently, I'm studying UX design principles to complement
-              my web development skills.
+              place. Currently, I'm learning Python and practicing JS on CodeWars to keep my skills sharp.
             </p>
             <p className="about__last-par">
               If you'd like to learn more about me or my work, feel free to{" "}
